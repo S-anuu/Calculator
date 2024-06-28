@@ -1,0 +1,115 @@
+
+/* General body styling */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c1b6b6;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Calculator container styling */
+#calculator {
+    background-color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0, 0.25);
+    max-width: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+/* Display styling */
+#display {
+    width: 100%;
+    height: 120px;
+    background-color: #1b1616;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 3.5rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Buttons container grid styling */
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+/* General button styling */
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+/* Button active effect */
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+/* Operator buttons specific styling */
+.operator-btn {
+    background-color: hsl(35, 100%, 55%);
+}
+
+.operator-btn:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+
+.operator-btn:active {
+    background-color: hsl(35, 100%, 75%);
+}
+
+/* Zero button specific styling */
+.zero-btn {
+    grid-column: span 2;
+    width: 210px;
+}
+
+/* Function buttons specific styling */
+.function-btn {
+    background-color: #a5a5a5;
+    color: black;
+    font-size: 3rem;
+}
+
+.function-btn:hover {
+    background-color: #bcbcbc;
+}
+
+.function-btn:active {
+    background-color: #d3d3d3;
+}
+
+#deleteLast-btn {
+    padding-top: 0px;
+
+}
+
+#history {
+    height: 100px; /* Adjust height as needed */
+    overflow-y: scroll; /* Enable scrolling if history exceeds display area */
+    padding: 10px;
+    background-color: #f8f5f5; /* Example background color */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Example font */
+}
